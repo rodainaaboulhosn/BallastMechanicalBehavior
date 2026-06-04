@@ -37,7 +37,8 @@ def run_model(D50, Cu, Cc, e, gamma, sigma3):
     inp = [0.0] * 8
     feature2 = [0.0] * 10
     feature4 = [0.0, 0.0]
-
+    outp1=0.0
+    outp2=0.0
     Delta_Ei = 0.2
     Ei = 0.1
     nincr = 19
