@@ -185,7 +185,7 @@ def run_model(D50, Cu, Cc, e, gamma, sigma3):
         netsum = netsum + 1.03949
         netsum = netsum + feature4[0] * (-7.752682E-02)
         netsum = netsum + feature4[1] * 0.6434758
-        self.feature2[5] = math.tanh(netsum)
+        feature2[5] = math.tanh(netsum)
             
         netsum = 0.2147741
         netsum = netsum + inp[0] * (-1.746428)
