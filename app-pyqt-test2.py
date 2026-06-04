@@ -334,7 +334,7 @@ if run:
         ax2.set_ylabel("Volumetric deformation (%)")
         ax2.invert_yaxis()
         ax2.set_xlim(left=0)
-        ax2.set_ylim(bottom=0)
+        
         ax2.grid(True, linestyle="--")
         st.pyplot(fig2)
 
