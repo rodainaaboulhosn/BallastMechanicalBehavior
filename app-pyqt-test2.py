@@ -298,8 +298,8 @@ def run_model(D50, Cu, Cc, e, gamma, sigma3):
 
         if i>0:
             Str.append(Ei)
-            Qi.append(out1)
-            ev.append(out2)
+            Qi.append(outp1)
+            ev.append(outp2)
 
     return Str, Qi, ev
 
