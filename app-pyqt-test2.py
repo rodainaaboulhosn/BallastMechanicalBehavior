@@ -322,7 +322,7 @@ if run:
         ax1.set_xlabel("Axial strain (%)")
         ax1.set_ylabel("Stress (kPa)")
         ax1.grid(True, linestyle="--")
-        ax1.set_xlim(left=0)
+        ax1.set_xlim([0,22.5])
         ax1.set_ylim(bottom=0)
         st.pyplot(fig1)
 
@@ -333,7 +333,7 @@ if run:
         ax2.set_xlabel("Axial strain (%)")
         ax2.set_ylabel("Volumetric deformation (%)")
         ax2.invert_yaxis()
-        ax2.set_xlim(left=0)
+        ax2.set_xlim([0,22.5])
         
         ax2.grid(True, linestyle="--")
         st.pyplot(fig2)
