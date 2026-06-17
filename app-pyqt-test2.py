@@ -324,7 +324,10 @@ if run:
         ax1.grid(True, linestyle="--")
         ax1.set_xlim([0,22.5])
         ax1.set_ylim(bottom=0)
+        ymax_plot = max(Qi) * 1.05  # 5% margin
+        ax1.set_ylim(0, ymax_plot)
         st.pyplot(fig1)
+        
 
     with col2:
         fig2, ax2 = plt.subplots()
@@ -334,7 +337,10 @@ if run:
         ax2.set_ylabel("Volumetric deformation (%)")
         ax2.invert_yaxis()
         ax2.set_xlim([0,22.5])
-        
+        ymin_ev = math.floor(min(ev))
+        ymax_ev = math.ceil(max(ev))
+
+        ax2.set_ylim(ymax_ev, ymin_ev)   # because axis is inverted
         ax2.grid(True, linestyle="--")
         st.pyplot(fig2)
 
