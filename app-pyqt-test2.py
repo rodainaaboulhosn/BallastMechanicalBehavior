@@ -324,8 +324,8 @@ if run:
         ax1.grid(True, linestyle="--")
         ax1.set_xlim([0,22.5])
         ax1.set_ylim(bottom=0)
-        ymax_plot = max(Qi) * 1.05  # 5% margin
-        ax1.set_ylim(0, ymax_plot)
+        ymax_q = math.ceil(max(Qi) / 100) * 100
+        ax1.set_ylim(0, ymax_q)
         st.pyplot(fig1)
         
 
