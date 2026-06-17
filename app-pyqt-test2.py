@@ -17,10 +17,10 @@ st.title("RNN Model for Ballast Mechanical Behavior")
 # ----------------------------
 st.sidebar.header("Input Parameters")
 
-D50 = st.sidebar.number_input("Particle diameter D50 (mm)", value=20.0)
+D50 = st.sidebar.number_input("Particle diameter D50 (mm)", value=30.0)
 Cu = st.sidebar.number_input("Coefficient of uniformity", value=2.0)
-Cc = st.sidebar.number_input("Coefficient of curvature", value=0.9)
-e = st.sidebar.number_input("Void ratio", value=0.7)
+Cc = st.sidebar.number_input("Coefficient of curvature", value=0.85)
+e = st.sidebar.number_input("Void ratio", value=0.8)
 gamma = st.sidebar.number_input("Unit weight (kN/m³)", value=16.0)
 sigma3 = st.sidebar.number_input("Confining pressure (kPa)", value=100.0)
 
