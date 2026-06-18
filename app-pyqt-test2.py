@@ -357,3 +357,25 @@ if run:
         file_name="output.csv",
         mime="text/csv"
     )
+
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: grey;
+        font-size: 12px;
+        padding: 5px;
+        background-color: white;
+    }
+    </style>
+
+    <div class="footer">
+        © 2026 Prof. Mohamed Shahin & Dr. Rodaina Aboul Hosn. All rights reserved.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
